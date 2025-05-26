@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Accessibilitat per a tothom</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- CSS de Leaflet per fer el mapa interactiu -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+z0ymp2xbYl9Y8vUhzl0JtE20LecN/PN1t0ZLfXPs=" crossorigin=""/>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Un Poble per a Tothom</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+<nav id="menu">
+    <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="#membres">Membres</a></li>
+            <li><a href="#propostes">Propostes</a></li>
+            <li><a href="#mapa">Mapa Interactiu</a></li>
+            <li><a href="#footer">Contacte</a></li>
+        </ul>
+        <a href="#" class="close">Close</a>
+    </div>
+</nav>
+
+<section id="banner">
+  <div class="inner" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <!-- Logotip -->
+    <img src="assets/images/lupa.png" alt="Logotip del projecte" style="max-width: 130px; height: auto; border-radius: 10px;">
+
+<!-- Text -->
+<div>
+  <h2 style="text-transform: uppercase;">UN POBLE PER A TOTHOM</h2>
+  <p style="text-transform: none;">
+    Aquest projecte vol analitzar l’accessibilitat i la mobilitat a peu al centre dels Pallaressos, amb especial atenció als passos per a vianants.
+    A partir de l’observació directa i l’anàlisi cartogràfica, volem detectar punts forts i febles del municipi i proposar millores per garantir un entorn segur i accessible per a totes les persones.
+  </p>
+</div>
+
+</section> <!-- final del resum -->
+<section id="resum" class="wrapper spotlight style1">
+  <div class="inner">
+    <div class="content" style="text-align: left;">
+      <h2 class="major" style="text-align: left;">Resum del projecte</h2>
+      <p>
+        El projecte se centra en estudiar l'accessibilitat urbana mitjançant l’anàlisi dels passos per a vianants al centre del poble.
+        Hem utilitzat un mapa base creat amb eines digitals i hem realitzat treball de camp per detectar si aquests passos són accessibles per a persones amb mobilitat reduïda, cotxets o gent gran.
+      </p>
+      <p>
+        A través d’aquest estudi, volem aportar una mirada crítica i constructiva sobre la qualitat de l’espai públic i la seva adaptació a les necessitats de tothom.
+      </p>
+
+      <!-- Detalls del projecte -->
+      <h3>Detalls del projecte</h3>
+      <ul>
+        <li><strong>Referència:</strong> XXX-XXXXX-XXX</li>
+        <li><strong>Investigador principal:</strong> Jaume Rius de la Iglesia</li>
+        <li><strong>Entitat:</strong> Universitat Rovira i Virgili</li>
+        <li><strong>Centre:</strong> Facultat de Turisme i Geografia</li>
+        <li><strong>Títol:</strong> Un Poble per a Tothom</li>
+        <li><strong>Duració:</strong> 1 any (2024-2025)</li>
+        <li><strong>Paraules clau:</strong> Accessibilitat urbana, mobilitat a peu, inclusió, espai públic, urbanisme sostenible.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Secció de Membres del projecte -->
+<section id="membres" class="wrapper style1">
+  <div class="inner">
+    <h2 class="major">Membres del projecte</h2>
+    <p>Equip encarregat de desenvolupar el projecte d’accessibilitat urbana al nucli de Pallaresos.</p>
+
+    <!-- Contenidor de totes les files -->
+    <div style="display: flex; flex-direction: column; gap: 3rem; align-items: center;">
+
+      <!-- Primera fila: Jaume i Paola -->
+      <div style="display: flex; justify-content: center; gap: 5rem;">
+        <!-- Jaume -->
+        <div style="text-align: center;">
+          <img src="assets/images/Jaume.jpg" alt="Jaume Rius" style="width: 200px; border-radius: 10px;">
+          <h3 style="margin-top: 10px;">JAUME RIUS <i class="fas fa-user"></i></h3>
+          <p><strong>Coordinador del projecte</strong></p>
+        </div>
+
+        <!-- Paola -->
+        <div style="text-align: center;">
+          <img src="assets/images/Paola.png" alt="Paola Vilagran" style="width: 200px; border-radius: 10px;">
+          <h3 style="margin-top: 10px;">PAOLA VILAGRAN <i class="fas fa-laptop-code"></i></h3>
+          <p><strong>Dissenyadora web</strong></p>
+        </div>
+      </div>
+
+      <!-- Segona fila: Alex i Gerard -->
+      <div style="display: flex; justify-content: center; gap: 5rem;">
+        <!-- Alex -->
+        <div style="text-align: center;">
+          <img src="assets/images/Alex.png" alt="Alex Sales" style="width: 200px; border-radius: 10px;">
+          <h3 style="margin-top: 10px;">ALEX SALES <i class="fas fa-walking"></i></h3>
+          <p><strong>Responsable de treball de camp</strong></p>
+        </div>
+
+        <!-- Gerard -->
+        <div style="text-align: center;">
+          <img src="assets/images/Gerard.png" alt="Gerard Salgado" style="width: 200px; border-radius: 10px;">
+          <h3 style="margin-top: 10px;">GERARD SALGADO <i class="fas fa-map-marked-alt"></i></h3>
+          <p><strong>Tècnic SIG</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓ: Propostes d'accessibilitat -->
+<section id="propostes" class="wrapper style1">
+  <div class="inner">
+    <h2 class="major">Propostes</h2>
+    <div class="features">
+
+      <!-- Proposta 1 -->
+      <article>
+        <span class="icon solid fa-map-signs" style="font-size: 2.5rem; color: white;"></span>
+        <div class="content">
+          <h3>Senyalització i passos accessibles</h3>
+          <p>
+            Instal·lació de mobiliari accessible per a persones amb discapacitat, així com passos de vianants amb paviment especial i relleu per facilitar l’orientació de persones amb discapacitat visual.
+          </p>
+        </div>
+      </article>
+
+      <!-- Proposta 2 -->
+      <article>
+        <span class="icon solid fa-traffic-light" style="font-size: 2.5rem; color: white;"></span>
+        <div class="content">
+          <h3>Semàfors intel·ligents i inclusius</h3>
+          <p>
+            Instal·lació de semàfors amb sensors de moviment que ampliïn automàticament el temps de pas per a persones grans o amb mobilitat reduïda. Incorporació de senyals audibles amb volum regulable i vibració per facilitar el creuament a persones amb discapacitat auditiva.
+          </p>
+        </div>
+      </article>
+
+<article>
+  <span class="icon solid fa-walking" style="font-size: 2.5rem; color: white;"></span>
+  <div class="content">
+    <h3>Ampliació de voreres i espais de pas</h3>
+    <p>
+      En alguns trams, les voreres són massa estretes o tenen obstacles. Proposem ampliar-les i eliminar-ne els elements innecessaris per garantir un pas segur i còmode per a tothom, especialment persones amb mobilitat reduïda i infants.
+    </p>
+  </div>
+</article>
+<article>
+  <span class="icon solid fa-parking" style="font-size: 2.5rem; color: white;"></span>
+  <div class="content">
+    <h3>Aparcaments adaptats</h3>
+    <p>
+      Places d’aparcament ampliades per a vehicles, bicicletes adaptades i patinets elèctrics, amb punts de càrrega i suports estabilitzadors. També es preveu la instal·lació d'il·luminació intel·ligent amb sensors de moviment per millorar la seguretat nocturna, aixi com una opció de reserva via app per garantir accessibilitat prioritària.
+    </p>
+  </div>
+</article>
+<!-- Secció del mapa interactiu amb imatge ampliable -->
+<section id="mapa" class="wrapper style2">
+  <div class="inner">
+    <h2 class="major">Mapa d'accessibilitat</h2>
+    <p>Fes clic per ampliar la imatge i explora el mapa amb detall. Pots tornar enrere amb el botó de tancar.</p>
+
+    <!-- Contenidor amb estil de zoom simple -->
+    <div style="text-align: center;">
+      <a href="#" onclick="obrirMapa()">
+      <img src="assets/images/mapa-accessibilitat.jpg" alt="Mapa d'accessibilitat" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+      </a>
+      </div>
+  </div>
+</section>
+<!-- MODAL: Imatge a pantalla completa -->
+<div id="modalMapa" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); justify-content: center; align-items: center; z-index: 9999;">
+  <img src="assets/images/mapa-accessibilitat.jpg" alt="Mapa ampliat" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
+  <button onclick="tancarMapa()" style="position: absolute; top: 20px; right: 30px; font-size: 2rem; background: none; color: white; border: none; cursor: pointer;">✕</button>
+</div>
+<section id="resultats" class="wrapper style1">
+  <div class="inner">
+    <h2 class="major">Resultats de l’estudi</h2>
+    <p>
+      El nostre estudi exhaustiu del nucli urbà dels Pallaresos revela una situació amb notables oportunitats de millora en matèria d’accessibilitat.
+      Els resultats mostren que actualment només el <strong>35%</strong> dels passos de vianants compleixen amb els estàndards d’accessibilitat, mentre que la majoria (<strong>65%</strong>) presenten obstacles significatius, com ara la manca de rampes o desnivells superiors als 3 cm.
+    </p>
+    <p>
+      El sistema de semàfors presenta també deficiències importants, amb només un <strong>20%</strong> dels creuaments equipats amb dispositius inclusius.
+      Per abordar aquests reptes, proposem un <strong>pla d’actuació en dues fases</strong>:
+    </p>
+    <ul>
+      <li><strong>A mitjà termini (1 any):</strong> ampliarem les voreres més estretes i instal·larem cinc semàfors inclusius als punts més conflictius.</li>
+      <li><strong>A llarg termini (2 anys):</strong> adaptarem els 13 passos de vianants no accessibles i el pàrquing adaptat.</li>
+    </ul>
+    <p>
+      Amb aquestes mesures eliminarem els obstacles actuals i millorarem l’accessibilitat al centre del poble, que és on es concentra el major nombre de trajectes principals,
+      garantint així un entorn urbà més segur i inclusiu per a tota la ciutadania, especialment per a les persones amb mobilitat reduïda.
+    </p>
+  </div>
+</section>
+<section id="footer">
+  <div class="inner">
+    <h2 class="major">Contacte</h2>
+    <p>"El teu punt de vista és clau per fer del poble un lloc més accessible. Escriu-nos les teves idees, dubtes o propostes de millora. Junts podem transformar els espais públics"!</p>
+   <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+      <!-- Formulari -->
+      <div style="flex: 1; min-width: 250px;">
+        <form method="post" action="#">
+          <div class="fields">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+              <label for="email">Correu electrònic</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="message">Missatge</label>
+              <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Enviar Missatge" /></li>
+          </ul>
+        </form>
+      </div>
+
+      <!-- Dades de contacte -->
+      <div style="flex: 1; min-width: 250px;">
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Vila-seca<br />
+            Carrer de Joanot Martorell,15<br />
+            43840 Vila-seca, Tarragona
+          </li>
+          <li class="icon solid fa-phone">977 29 79 00</li>
+          <li class="icon solid fa-envelope"><a href="#">unpobleperatothom@gmail.com</a></li>
+          <li class="icon brands fa-twitter"><a href="#">twitter.com/unpobleperatothom</a></li>
+          <li class="icon brands fa-facebook-f"><a href="#">facebook.com/unpobleperatothom</a></li>
+          <li class="icon brands fa-instagram"><a href="#">instagram.com/unpobleperatothom</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="copyright">
+      <li>&copy; Jaume Rius de la Yglesia 2025.</li>
+    </ul>
+  </div>
+</section>
+<script>
+  let zoomLevel = 1;
+  const modal = document.getElementById("modalMapa");
+  const modalImg = modal.querySelector("img");
+
+  function obrirMapa() {
+    modal.style.display = "flex";
+    zoomLevel = 1;
+    modalImg.style.transform = "scale(1)";
+  }
+
+  function tancarMapa() {
+    modal.style.display = "none";
+  }
+
+  // Tanca amb tecla ESC
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      tancarMapa();
+    }
+  });
+
+  // Zoom amb la roda del ratolí
+  modalImg.addEventListener("wheel", function (event) {
+    event.preventDefault();
+    if (event.deltaY < 0) {
+      zoomLevel += 0.1;
+    } else {
+      zoomLevel = Math.max(0.5, zoomLevel - 0.1);
+    }
+    modalImg.style.transform = `scale(${zoomLevel})`;
+  });
+</script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Botó per pujar amunt -->
+<button id="scrollTopBtn" title="Torna a l'inici" style="
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 999;
+">
+  ↑
+</button>
+
+<section id="logos" style="text-align: center; margin-top: 2rem;">
+  <h2 class="major">Xarxes Socials i Entitats Colaboradores</h2>
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center; margin-top: 1.5rem;">
+    <!-- URV -->
+    <img src="assets/images/urv-centrat-color.png" alt="URV" style="height: 60px;">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/unpobleperatothom" target="_blank">
+      <img src="assets/images/images.png" alt="Facebook" style="height: 40px;">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/unpobleperatothom" target="_blank">
+      <img src="assets/images/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Instagram" style="height: 40px;">
+    </a>
+
+    <!-- X (Twitter) -->
+    <a href="https://twitter.com/unpobleperatothom" target="_blank">
+      <img src="assets/images/nuevo-diseno-icono-x-logotipo-twitter-2023_1017-45418.avif" alt="X/Twitter" style="height: 35px;">
+    </a>
+  </div>
+</section>
